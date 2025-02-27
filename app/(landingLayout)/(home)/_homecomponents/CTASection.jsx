@@ -4,7 +4,7 @@ function CTASection() {
   return (
     <section
       style={{
-        backgroundImage: "url('/images/CTAbg.svg')",
+        backgroundImage: "url('/images/CTABg.png')",
       }}
       className="relative px-40 py-56 w-full min-h-[637px] max-md:px-5 max-md:py-24 max-md:max-w-full"
     >

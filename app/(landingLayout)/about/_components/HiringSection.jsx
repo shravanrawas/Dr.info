@@ -1,7 +1,7 @@
 const HiringSection = () => {
     return (
       <section style={{
-        backgroundImage: "url('/images/CTAbg.svg')",
+        backgroundImage: "url('/images/CTABg.png')",
       }} className="flex relative flex-col justify-center px-96 py-48 w-full min-h-[637px] max-md:px-5 max-md:py-24 max-md:max-w-full">
         <div className="flex z-0 flex-col self-center w-full max-w-[812px] max-md:max-w-full">
           <div className="w-full text-center max-md:max-w-full">
