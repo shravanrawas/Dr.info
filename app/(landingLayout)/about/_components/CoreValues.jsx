@@ -4,21 +4,21 @@ const CoreValues = () => {
   const values = [
     {
       image:
-        "/images/credibility.svg",
+        "/images/Shield.png",
       title: "Credibility",
       description:
         "We prioritize providing evidence-based, exactly referenced medical information to ensure healthcare professionals can trust the information they receive.",
     },
     {
       image:
-        "/images/innovation.svg",
+        "/images/LightBulb.png",
       title: "Innovation",
       description:
         "Constantly advancing our propriotory AI algorithm to improve medical information aggregation and summarization tools.",
     },
     {
       image:
-        "/images/simplicity.svg",
+        "/images/Gear.png",
       title: "Simplicity",
       description:
         "Offering a user-friendly interface that makes medical information accessible and digestible in a matter of seconds.",
