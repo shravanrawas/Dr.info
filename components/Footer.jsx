@@ -29,7 +29,7 @@ export const Footer = ({ className, ...props }) => {
           <span>
             <span className="developed-by-synduct-span">Developed by</span>
             <span className="developed-by-synduct-span2">{' '}</span>
-            <span className="developed-by-synduct-span3">Synduct!</span>
+            <span className="developed-by-synduct-span3 text-[#3771FE]">Synduct!</span>
           </span>{" "}
         </div>
       </div>
