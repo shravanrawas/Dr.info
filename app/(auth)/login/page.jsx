@@ -30,7 +30,7 @@ export default function Login() {
           <div className="mt-16 max-w-md mx-auto">
             {isLogin ? (
               <>
-                <h2 className="text-center text-[#4f576c] text-xl w-full font-medium border-b-2 border-gray-500 inline-block mx-auto pb-1">
+                <h2 className="text-center text-[#4f576c] text-xl w-full font-medium inline-block mx-auto pb-1">
                   Login
                 </h2>
 
@@ -103,7 +103,7 @@ export default function Login() {
               </>
             ) : (
               <>
-                <h2 className="text-center text-[#4f576c] text-xl w-full font-medium border-b-2 border-gray-500 inline-block mx-auto pb-1">
+                <h2 className="text-center text-[#4f576c] text-xl w-full font-medium inline-block mx-auto pb-1">
                   Sign Up
                 </h2>
 
