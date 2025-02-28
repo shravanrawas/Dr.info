@@ -10,31 +10,32 @@ export default function Login() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-white p-4">
       <div className="w-full max-w-5xl bg-[#eaf0ff] rounded-xl overflow-hidden shadow-2xl flex">
+      
         <div
           style={{
             backgroundImage: `url(${
               isLogin ? "/images/loginImg.svg" : "/images/signupImg.svg"
             })`,
           }}
-          className="w-2/5 relative hidden md:block"
-        >
+         className="w-2/5 relative hidden md:block"
+        ></div>
 
-        </div>
-
-        <div className="w-full md:w-3/5 bg-[#eaf0ff] p-8 relative">
+      
+        <div className="w-full md:w-3/5 bg-[#eaf0ff] p-8 relative flex flex-col">
           <Link href="/">
             <button className="absolute top-4 right-4 text-[#4f576c]">
               <X size={20} />
             </button>
           </Link>
-          <div className="mt-16 max-w-md mx-auto">
+
+          <div className="mt-8 max-w-md mx-auto h-full flex flex-col justify-center min-h-[500px] md:min-h-[600px]">
             {isLogin ? (
               <>
-                <h2 className="text-center text-[#4f576c] text-xl w-full font-medium inline-block mx-auto pb-1">
+                <h2 className="text-center text-[#4f576c] text-xl font-medium pb-1">
                   Login
                 </h2>
 
-                <div className="mt-8 text-center">
+                <div className="text-center mt-4">
                   <h1 className="text-2xl font-medium text-[#4f576c] mb-1">
                     Welcome Back to DrInfo
                   </h1>
@@ -43,25 +44,21 @@ export default function Login() {
                   </p>
                 </div>
 
-                <div className="mt-8 space-y-4">
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="password"
-                      placeholder="Password"
-                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
-                    />
-                    <div className="flex justify-end mt-1">
-                      <button className="text-sm text-[#909cb9]">
-                        Forgot Password?
-                      </button>
-                    </div>
+                <div className="mt-6 space-y-4">
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
+                  />
+                  <div className="flex justify-end">
+                    <button className="text-sm text-[#909cb9]">
+                      Forgot Password?
+                    </button>
                   </div>
 
                   <button className="w-full bg-[#3771fe] text-white py-3 rounded-md hover:bg-[#004aff] transition-colors">
@@ -80,16 +77,18 @@ export default function Login() {
                     <Linkedin size={24} className="text-[#4f576c]" />
                   </button>
                   <button className="p-2 rounded-full">
-                    <div className="w-6 h-6 flex items-center justify-center">
-                      <img className='object-cover h-full w-full' src="/icons/google.svg" alt="" />
-                    </div>
+                    <img
+                      className="w-6 h-6 object-cover"
+                      src="/icons/google.svg"
+                      alt="Google"
+                    />
                   </button>
                   <button className="p-2 rounded-full">
                     <Facebook size={24} className="text-[#4f576c]" />
                   </button>
                 </div>
 
-                <div className="mt-8 text-center">
+                <div className="mt-6 text-center">
                   <p className="text-[#909cb9]">
                     Don't have an account?
                     <button
@@ -103,11 +102,11 @@ export default function Login() {
               </>
             ) : (
               <>
-                <h2 className="text-center text-[#4f576c] text-xl w-full font-medium inline-block mx-auto pb-1">
+                <h2 className="text-center text-[#4f576c] text-xl font-medium pb-1">
                   Sign Up
                 </h2>
 
-                <div className="mt-8 text-center">
+                <div className="text-center mt-4">
                   <h1 className="text-2xl font-medium text-[#4f576c] mb-1">
                     Create a New Account
                   </h1>
@@ -116,7 +115,7 @@ export default function Login() {
                   </p>
                 </div>
 
-                <div className="mt-8 space-y-4">
+                <div className="mt-6 space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <input
                       type="text"
@@ -129,20 +128,16 @@ export default function Login() {
                       className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
                     />
                   </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
-                    />
-                  </div>
-                  <div className="relative">
-                    <input
-                      type="password"
-                      placeholder="Enter your password"
-                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe] pr-10"
-                    />
-                  </div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Enter your password"
+                    className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
+                  />
 
                   <div className="flex items-start gap-2">
                     <input
@@ -171,18 +166,18 @@ export default function Login() {
                     <Linkedin size={24} className="text-[#4f576c]" />
                   </button>
                   <button className="p-2 rounded-full">
-                    <div className="w-6 h-6 flex items-center justify-center">
-                    <div className="w-6 h-6 flex items-center justify-center">
-                      <img className='object-cover h-full w-full' src="/icons/google.svg" alt="" />
-                    </div>
-                    </div>
+                    <img
+                      className="w-6 h-6 object-cover"
+                      src="/icons/google.svg"
+                      alt="Google"
+                    />
                   </button>
                   <button className="p-2 rounded-full">
                     <Facebook size={24} className="text-[#4f576c]" />
                   </button>
                 </div>
 
-                <div className="mt-8 text-center">
+                <div className="mt-6 text-center">
                   <p className="text-[#909cb9]">
                     Already have an account?
                     <button
