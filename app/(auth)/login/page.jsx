@@ -81,18 +81,7 @@ export default function Login() {
                   </button>
                   <button className="p-2 rounded-full">
                     <div className="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        className="text-[#4f576c]"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
-                        />
-                        <circle fill="currentColor" cx="12" cy="12" r="3" />
-                      </svg>
+                      <img className='object-cover h-full w-full' src="/icons/google.svg" alt="" />
                     </div>
                   </button>
                   <button className="p-2 rounded-full">
@@ -183,18 +172,9 @@ export default function Login() {
                   </button>
                   <button className="p-2 rounded-full">
                     <div className="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        className="text-[#4f576c]"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
-                        />
-                        <circle fill="currentColor" cx="12" cy="12" r="3" />
-                      </svg>
+                    <div className="w-6 h-6 flex items-center justify-center">
+                      <img className='object-cover h-full w-full' src="/icons/google.svg" alt="" />
+                    </div>
                     </div>
                   </button>
                   <button className="p-2 rounded-full">
