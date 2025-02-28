@@ -36,7 +36,7 @@ export default function Login() {
                 </h2>
 
                 <div className="text-center mt-4">
-                  <h1 className="text-2xl font-medium text-[#4f576c] mb-1">
+                  <h1 className="text-3xl font-medium text-[#4f576c] mb-1">
                     Welcome Back to DrInfo
                   </h1>
                   <p className="text-[#909cb9] text-sm">
@@ -107,7 +107,7 @@ export default function Login() {
                 </h2>
 
                 <div className="text-center mt-4">
-                  <h1 className="text-2xl font-medium text-[#4f576c] mb-1">
+                  <h1 className="text-3xl font-medium text-[#4f576c] mb-1">
                     Create a New Account
                   </h1>
                   <p className="text-[#909cb9] text-sm">
