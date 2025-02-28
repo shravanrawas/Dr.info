@@ -13,7 +13,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-white/20 px-6 md:px-32 py-4 flex flex-col justify-center h-[120px] fixed w-full top-0 shadow-lg backdrop-blur-lg z-50">
+    <nav className="bg-white/20 px-6 md:px-32 py-4 flex flex-col justify-center h-[100px] fixed w-full top-0 shadow-lg backdrop-blur-lg z-50">
       <div className="flex items-center justify-between w-full">
 
         

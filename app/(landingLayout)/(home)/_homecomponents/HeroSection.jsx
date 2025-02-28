@@ -4,11 +4,11 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section
-      style={{
-        backgroundImage:
-          "url('/images/homeBg.svg')",
-      }}
-      className="relative py-96 w-full px-[472px] max-md:px-5 max-md:py-24 max-md:max-w-full"
+      // style={{
+      //   backgroundImage:
+      //     "url('/images/homeBg.svg')",
+      // }}
+      className="relative w-full h-screen flex items-center justify-center bg-diagonal-gradient shadow-custom"
     >
       <div className="relative z-10 flex mt-[80px] md:mt-0 flex-col w-full max-w-[784px] text-center">
         <h2 className="text-6xl font-semibold text-blue-900 leading-[80px] max-md:text-4xl max-md:leading-[55px]">

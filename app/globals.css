@@ -109,13 +109,60 @@
   }
 }
 
-
-
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+
+@layer utilities {
+  /* Background with diagonal cross gradient */
+  .bg-diagonal-gradient {
+    position: relative;
+    background: linear-gradient(135deg, #6699FF 10%, #B29EFA 40%, #F4F6FD 70%, #FFFFFF 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease-in-out infinite;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  /* Diagonal cross-lines */
+  .bg-diagonal-gradient::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 2px, transparent 2px),
+                      linear-gradient(45deg, rgba(255, 255, 255, 0.2) 2px, transparent 2px);
+    background-size: 40px 40px;
+    opacity: 0.4;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  /* Soft glow effect */
+  .bg-diagonal-gradient::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* Gradient animation */
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Soft drop shadow */
+  .shadow-custom {
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 }

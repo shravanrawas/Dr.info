@@ -1,23 +1,223 @@
-import React from "react";
-import LoginForm from "./_components/LoginForm";
-import BrandingSection from "./_components/BrandingSection";
+"use client";
 
+import { useState } from "react";
+import { X, Linkedin, Facebook } from "lucide-react";
+import Link from "next/link";
 
-const LoginPage = () => {
+export default function Login() {
+  const [isLogin, setIsLogin] = useState(true);
+
   return (
-    <main className="overflow-hidden rounded-xl shadow-[0px_0px_65px_rgba(0,0,0,0.25)]">
-      <div className="w-full rounded-xl bg-indigo-50 bg-opacity-70 max-md:max-w-full">
-        <div className="px-4 py-3.5 w-full max-md:pr-5 max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col">
-            <BrandingSection />
-            <section className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-              <LoginForm />
-            </section>
+    <div className="flex items-center justify-center min-h-screen bg-white p-4">
+      <div className="w-full max-w-5xl bg-[#eaf0ff] rounded-xl overflow-hidden shadow-2xl flex">
+        <div
+          style={{
+            backgroundImage: `url(${
+              isLogin ? "/images/loginImg.svg" : "/images/signupImg.svg"
+            })`,
+          }}
+          className="w-2/5 relative hidden md:block"
+        >
+
+        </div>
+
+        <div className="w-full md:w-3/5 bg-[#eaf0ff] p-8 relative">
+          <Link href="/">
+            <button className="absolute top-4 right-4 text-[#4f576c]">
+              <X size={20} />
+            </button>
+          </Link>
+          <div className="mt-16 max-w-md mx-auto">
+            {isLogin ? (
+              <>
+                <h2 className="text-center text-[#4f576c] text-xl w-full font-medium border-b-2 border-gray-500 inline-block mx-auto pb-1">
+                  Login
+                </h2>
+
+                <div className="mt-8 text-center">
+                  <h1 className="text-2xl font-medium text-[#4f576c] mb-1">
+                    Welcome Back to DrInfo
+                  </h1>
+                  <p className="text-[#909cb9] text-sm">
+                    Enter your credentials to access your account.
+                  </p>
+                </div>
+
+                <div className="mt-8 space-y-4">
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Email Address"
+                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
+                    />
+                    <div className="flex justify-end mt-1">
+                      <button className="text-sm text-[#909cb9]">
+                        Forgot Password?
+                      </button>
+                    </div>
+                  </div>
+
+                  <button className="w-full bg-[#3771fe] text-white py-3 rounded-md hover:bg-[#004aff] transition-colors">
+                    Continue
+                  </button>
+                </div>
+
+                <div className="mt-6 flex items-center justify-center gap-4">
+                  <div className="h-px bg-[#b2b7c5] flex-1"></div>
+                  <span className="text-[#909cb9]">Or</span>
+                  <div className="h-px bg-[#b2b7c5] flex-1"></div>
+                </div>
+
+                <div className="mt-6 flex justify-center gap-6">
+                  <button className="p-2 rounded-full">
+                    <Linkedin size={24} className="text-[#4f576c]" />
+                  </button>
+                  <button className="p-2 rounded-full">
+                    <div className="w-6 h-6 flex items-center justify-center">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        className="text-[#4f576c]"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
+                        />
+                        <circle fill="currentColor" cx="12" cy="12" r="3" />
+                      </svg>
+                    </div>
+                  </button>
+                  <button className="p-2 rounded-full">
+                    <Facebook size={24} className="text-[#4f576c]" />
+                  </button>
+                </div>
+
+                <div className="mt-8 text-center">
+                  <p className="text-[#909cb9]">
+                    Don't have an account?
+                    <button
+                      className="text-[#3771fe] ml-1 font-medium"
+                      onClick={() => setIsLogin(false)}
+                    >
+                      Sign Up
+                    </button>
+                  </p>
+                </div>
+              </>
+            ) : (
+              <>
+                <h2 className="text-center text-[#4f576c] text-xl w-full font-medium border-b-2 border-gray-500 inline-block mx-auto pb-1">
+                  Sign Up
+                </h2>
+
+                <div className="mt-8 text-center">
+                  <h1 className="text-2xl font-medium text-[#4f576c] mb-1">
+                    Create a New Account
+                  </h1>
+                  <p className="text-[#909cb9] text-sm">
+                    Sign up to get started with DrInfo
+                  </p>
+                </div>
+
+                <div className="mt-8 space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe]"
+                    />
+                  </div>
+                  <div className="relative">
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      className="w-full p-3 rounded-md border border-[#b2b7c5] bg-white focus:outline-none focus:ring-2 focus:ring-[#3771fe] pr-10"
+                    />
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <input
+                      type="checkbox"
+                      id="terms"
+                      className="mt-1 border-[#b2b7c5] rounded"
+                    />
+                    <label htmlFor="terms" className="text-sm text-[#4f576c]">
+                      I agree to the Terms & Conditions
+                    </label>
+                  </div>
+
+                  <button className="w-full bg-[#3771fe] text-white py-3 rounded-md hover:bg-[#004aff] transition-colors">
+                    Continue
+                  </button>
+                </div>
+
+                <div className="mt-6 flex items-center justify-center gap-4">
+                  <div className="h-px bg-[#b2b7c5] flex-1"></div>
+                  <span className="text-[#909cb9]">Or</span>
+                  <div className="h-px bg-[#b2b7c5] flex-1"></div>
+                </div>
+
+                <div className="mt-6 flex justify-center gap-6">
+                  <button className="p-2 rounded-full">
+                    <Linkedin size={24} className="text-[#4f576c]" />
+                  </button>
+                  <button className="p-2 rounded-full">
+                    <div className="w-6 h-6 flex items-center justify-center">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        className="text-[#4f576c]"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
+                        />
+                        <circle fill="currentColor" cx="12" cy="12" r="3" />
+                      </svg>
+                    </div>
+                  </button>
+                  <button className="p-2 rounded-full">
+                    <Facebook size={24} className="text-[#4f576c]" />
+                  </button>
+                </div>
+
+                <div className="mt-8 text-center">
+                  <p className="text-[#909cb9]">
+                    Already have an account?
+                    <button
+                      className="text-[#3771fe] ml-1 font-medium"
+                      onClick={() => setIsLogin(true)}
+                    >
+                      Log In
+                    </button>
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
-};
-
-export default LoginPage;
+}

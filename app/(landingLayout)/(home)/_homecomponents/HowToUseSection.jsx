@@ -85,7 +85,7 @@ const HowToUseSection = () => {
                 <img
                   src={step.image}
                   alt={step.title}
-                  className={`object-contain mt-5 max-w-full w-[1051px] transition-all duration-300 ${
+                  className={`object-contain mt-5 max-w-full w-[1051px] transition-all duration-50 ${
                     activeStep === step.id ? "opacity-100" : "opacity-50 blur-sm"
                   }`}
                 />

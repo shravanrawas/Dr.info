@@ -2,7 +2,7 @@ import React from "react";
 
 function Querysection() {
   return (
-    <div className="overflow-hidden hidden md:block z-10 self-center mt-0 -mb-10 w-full bg-white rounded-3xl max-w-[1199px] shadow-[0px_4px_30px_rgba(0,0,0,0.2)] max-md:mt-0 max-md:mb-2.5 max-md:max-w-full">
+    <div className="overflow-hidden hidden md:block z-10 self-center -mt-40 -mb-10 w-full bg-white rounded-3xl max-w-[1199px] shadow-[0px_4px_30px_rgba(0,0,0,0.2)] max-md:mt-0 max-md:mb-2.5 max-md:max-w-full">
       <div className="pr-5 bg-gray-200 bg-opacity-10 max-md:pr-5 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col">
           <aside className="w-[21%] max-md:ml-0 max-md:w-full">

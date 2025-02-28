@@ -8,7 +8,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
 
   return (
     <div
-      className={`absolute top-[120px] left-0 right-0 bg-white py-4 px-6 transition-transform duration-300 ease-in-out ${
+      className={`absolute top-[100px] left-0 right-0 bg-white py-4 px-6 transition-transform duration-300 ease-in-out ${
         isOpen ? "block" : "hidden"
       } lg:hidden`}
     >
