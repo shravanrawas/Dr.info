@@ -2,212 +2,128 @@ import React from "react";
 
 function Querysection() {
   return (
-    <div className="overflow-hidden hidden md:block z-10 self-center -mt-40 -mb-10 w-full bg-white rounded-3xl max-w-[1199px] shadow-[0px_4px_30px_rgba(0,0,0,0.2)] max-md:mt-0 max-md:mb-2.5 max-md:max-w-full">
-      <div className="pr-5 bg-gray-200 bg-opacity-10 max-md:pr-5 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
-          <aside className="w-[21%] max-md:ml-0 max-md:w-full">
-            <div className="pt-5 pr-2.5 pb-96 pl-7 mx-auto w-full bg-white shadow-[0px_3px_13px_rgba(0,0,0,0.09)] max-md:pb-24 max-md:pl-5 max-md:mt-10">
-              <div className="flex gap-1 w-32 max-w-full">
-                <div className="flex flex-col items-start self-start">
-                  <div className="flex shrink-0 w-4 rounded-full border-blue-500 border-solid border-[5px] h-[17px]" />
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/8e72e0b1d73737831ce5bf74f564659e4b14f7cf61b940a697dc1364c7b2b9a4?placeholderIfAbsent=true"
-                    alt="Logo detail"
-                    className="object-contain aspect-square w-[25px]"
-                  />
-                </div>
-                <span className="text-4xl font-semibold text-blue-500">
-                  r.Info
-                </span>
-              </div>
-
-              <nav className="mt-10 space-y-1.5">
-                <a
-                  href="#"
-                  className="flex gap-2 items-end py-1 pr-20 pl-2 text-sm font-medium text-blue-500 whitespace-nowrap bg-indigo-100 rounded-lg max-md:pr-5"
-                >
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/77494b7659f99e5c0f93440c83f366dda670cd6a4f012f04e0ac40939ef52979?placeholderIfAbsent=true"
-                    alt="Home icon"
-                    className="object-contain shrink-0 aspect-square w-[23px]"
-                  />
-                  <span>Home</span>
-                </a>
-
-                <a
-                  href="#"
-                  className="flex gap-2 items-end py-1 pr-2.5 pl-2 text-sm font-medium bg-white rounded-lg text-neutral-500"
-                >
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/669b40e85309ec1b133c89a2cba686b8afb7a84017820f829251ab89ab0aa648?placeholderIfAbsent=true"
-                    alt="Drug info icon"
-                    className="object-contain shrink-0 aspect-[1.05] w-[22px]"
-                  />
-                  <span>Drug Information</span>
-                </a>
-
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/4e7a0d7c85bc45503ae48bb477a1ec1772ebdf44ec29bcc20937eec91d41c2a0?placeholderIfAbsent=true"
-                  alt="Separator"
-                  className="object-contain mt-3.5 w-[172px]"
-                />
-                <button
-                  className="flex items-center gap-2 py-1 px-2.5 text-xs bg-white rounded-lg text-stone-500"
-                  aria-label="External Link"
-                >
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/e07dcd61100d061517d2c1951afd799c05ecba05397782d8187336bc9db0c4d1?placeholderIfAbsent=true"
-                    className="w-4 h-4 object-contain"
-                    alt="External link icon"
-                  />
-                  <span className="leading-none">External Link</span>
-                </button>
-
-                <a
-                  href="#"
-                  className="flex gap-2 items-end py-1 pr-2.5 pl-2 mt-11 text-sm font-medium bg-white rounded-lg text-neutral-500 max-md:mt-10"
-                >
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/65d590998a7805b5e5547cf5670b7eb286edfc6317754aaccfd1805d2cb402b7?placeholderIfAbsent=true"
-                    alt="Interaction icon"
-                    className="object-contain shrink-0 aspect-square w-[19px]"
-                  />
-                  <span>Drug-Drug Interation</span>
-                </a>
-
-                <a
-                  href="#"
-                  className="flex gap-2 items-end py-1 pr-2.5 pl-2 text-sm font-medium whitespace-nowrap bg-white rounded-lg text-neutral-500"
-                >
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/6af5a9737a05e261d6eea55ee4d89d68f2fd4de137109677bb9d7bfbc8792a05?placeholderIfAbsent=true"
-                    alt="Calculator icon"
-                    className="object-contain shrink-0 w-5 aspect-square"
-                  />
-                  <span>Calculators</span>
-                </a>
-
-                <a
-                  href="#"
-                  className="flex gap-2 items-end py-1 pr-2.5 pl-2 text-sm font-medium bg-white rounded-lg text-neutral-500"
-                >
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/9040c44dbf39ee945e02ecbec9a140f5ee9a86d2273c76e4ccaa1cb420a28aed?placeholderIfAbsent=true"
-                    alt="Clinical trials icon"
-                    className="object-contain shrink-0 w-5 aspect-square"
-                  />
-                  <span>Clinical Trials</span>
-                </a>
-
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/4e7a0d7c85bc45503ae48bb477a1ec1772ebdf44ec29bcc20937eec91d41c2a0?placeholderIfAbsent=true"
-                  alt="Separator"
-                  className="object-contain mt-3.5 w-[172px]"
-                />
-
-                <a
-                  href="#"
-                  className="flex gap-2 items-end py-1 pr-2.5 pl-2 mt-3 text-sm font-medium bg-white rounded-lg text-neutral-500"
-                >
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/e9250d84fdd22db93590ffe3800171da706b02be9eb765a1485f36b5c3b4bfed?placeholderIfAbsent=true"
-                    alt="Project icon"
-                    className="object-contain shrink-0 w-5 aspect-square"
-                  />
-                  <span>Your Project</span>
-                </a>
-
-                <a
-                  href="#"
-                  className="flex gap-2 items-end py-1 pr-2.5 pl-2 text-sm font-medium whitespace-nowrap bg-white rounded-lg text-neutral-500"
-                >
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/3550491deb59eb8d53a21276da220ad7d56dcc3cf5889ab48cca5e85c29f489b?placeholderIfAbsent=true"
-                    alt="History icon"
-                    className="object-contain shrink-0 w-5 aspect-square"
-                  />
-                  <span>History</span>
-                </a>
-              </nav>
-            </div>
-          </aside>
-
-          <section className="ml-5 w-[79%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col items-start mt-6 w-full max-md:mt-10 max-md:max-w-full">
-              <div className="flex gap-2 items-center self-end py-1 pr-2.5 pl-2 bg-white rounded-lg text-neutral-500">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/1649501d9f42f8700b9386da1db40a409d866e99e4ce5aa2fdbc8656ec591ef7?placeholderIfAbsent=true"
-                  alt="User avatar"
-                  className="object-contain z-0 shrink-0 self-stretch my-auto rounded-full aspect-[0.97] w-[33px]"
-                />
-
-                <div className="flex z-0 flex-col justify-center self-stretch my-auto">
-                  <span className="text-xs font-medium">Dr. Thomas Müller</span>
-                  <span className="text-xs">Premium Used</span>
-                </div>
-
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/879337e4cc4e56a7eca1ece898ce2ae46c9cae6c683f69e8d713ac555b572d4d?placeholderIfAbsent=true"
-                  alt="Dropdown icon"
-                  className="object-contain right-2 z-0 shrink-0 self-start w-4 aspect-[0.94] mt-[11px] h-[17px]"
-                />
-              </div>
-
-              <h2 className="mt-44 text-5xl font-medium self-center text-zinc-800 max-md:mt-10 max-md:max-w-full">
-                Your Clinical Decision Companion
-              </h2>
-              <p className="self-center mt-4 text-sm text-slate-500 max-md:max-w-full">
-                Instant Access to evidence based, trusted sources derived
-                medical information
-              </p>
-
-              <div className="relative w-full max-w-[725px] mt-7 mx-auto flex flex-col items-center">
-                <div className="flex gap-1.5 items-center px-5 py-3.5 bg-white rounded-lg shadow-[0px_0px_11px_rgba(0,0,0,0.05)] w-full">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/8a3aa18dab98e825a5896b9e3c15086027868a7071b563a56ce19ebc244febdd?placeholderIfAbsent=true"
-                    alt="Search icon"
-                    className="object-contain shrink-0 w-5 aspect-[0.95]"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Search your queries"
-                    className="flex-1 text-lg text-gray-400 bg-transparent outline-none"
-                  />
-                  <button className="absolute right-1.5 px-8 py-2 text-white bg-blue-500 rounded top-[8px] max-md:px-5">
-                    Enter
-                  </button>
-                </div>
-
-                <div className="flex flex-wrap gap-5 justify-between w-full mt-3.5">
-                  <div className="flex flex-wrap gap-3 items-center text-sm text-slate-500">
-                    <button className="py-2.5 px-4 rounded bg-white bg-opacity-50 shadow-[0px_0px_13px_rgba(0,0,0,0.04)]">
-                      Dr.info Summary
-                    </button>
-                    <button className="py-2.5 px-5 rounded bg-white bg-opacity-50 shadow-[0px_0px_13px_rgba(0,0,0,0.04)]">
-                      Guidelines
-                    </button>
-                    <button className="py-2.5 px-4 rounded bg-white bg-opacity-50 shadow-[0px_0px_13px_rgba(0,0,0,0.04)]">
-                      Clinical Pathways
-                    </button>
-                    <button className="py-2.5 px-2.5 rounded bg-white bg-opacity-50 shadow-[0px_0px_13px_rgba(0,0,0,0.04)]">
-                      PubMed Prefiltered
-                    </button>
-                  </div>
-
-                  <button className="flex items-center justify-center w-9 h-9 rounded bg-white bg-opacity-50 shadow-[0px_0px_13px_rgba(0,0,0,0.04)]">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets/d6002bacc16b4b209ad6806dbb5e9e08/0a4c22544af7e47f5a151ea04d977ff0c481d9790976caa77ddaf0d5de1a3494?placeholderIfAbsent=true"
-                      alt="Filter icon"
-                      className="w-4 h-4"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
+    <div className="w-[1198.636px] h-[774.813px] bg-[#fff] rounded-[20px] absolute top-[684px] left-[269px] overflow-hidden shadow-[0_4px_29.8px_0_rgba(0,0,0,0.2)] z-[11]">
+    <div className="w-[334px] h-[334px] bg-[url(https://static.codia.ai/image/2025-02-28/bfd2dc03-7610-44a8-97d6-6ec69bc1aff2.png)] bg-cover bg-no-repeat rounded-[50%] relative z-[13] mt-[-32px] mr-0 mb-0 ml-[1287px]" />
+    <div className="h-[1117px] absolute top-0 left-0 right-[-529.364px] z-[62]">
+      <div className="w-[1728px] h-[1117px] bg-[rgba(232,232,232,0.12)] absolute top-0 left-1/2 translate-x-[-50%] translate-y-0 z-[14]" />
+      <div className="w-[219.195px] h-[774.813px] bg-[#fff] absolute top-0 left-0 shadow-[0_2.775px_13.041px_0_rgba(0,0,0,0.09)] z-[15]" />
+      <div className="w-[128.563px] h-[52.883px] absolute top-[19.422px] left-[27.742px] z-[16]">
+        <div className="w-[16.322px] h-[16.322px] bg-[url(https://static.codia.ai/image/2025-02-28/729a353f-5e05-45b4-b13a-704126f9f307.png)] bg-cover bg-no-repeat rounded-[50%] absolute top-0 left-0 z-[18]" />
+        <span className="flex h-[50px] justify-start items-start font-['Lufga'] text-[38.40425109863281px] font-semibold leading-[50px] text-[#3771fe] absolute top-[2.883px] left-[34.563px] text-left whitespace-nowrap z-[17]">
+          r.Info
+        </span>
+        <div className="w-[24.747px] h-[24.56px] bg-[url(https://static.codia.ai/image/2025-02-28/5f2c19b9-b9e9-4b7e-b89d-04eb7eb87ef2.png)] bg-cover bg-no-repeat absolute top-[17.764px] left-[5.272px] z-[19]" />
+      </div>
+      <div className="flex w-[181.044px] h-[40.232px] pt-[3.468px] pr-[10.405px] pb-[3.468px] pl-[6.937px] gap-[6.937px] items-center flex-nowrap bg-[#fff] rounded-[6.937px] absolute top-[22px] left-[997px] z-[45]">
+        <div className="w-[33.295px] h-[33.295px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/495a14e3-7d1c-40c4-bdc8-f4e13645e688.png)] bg-cover bg-no-repeat rounded-[50%] relative z-[46]" />
+        <div className="flex w-[86px] flex-col justify-center items-start shrink-0 flex-nowrap relative z-[47]">
+          <span className="h-[13px] shrink-0 basis-auto font-['Lufga'] text-[10px] font-medium leading-[13px] text-[#747474] relative text-left whitespace-nowrap z-[48]">
+            Dr. Thomas Müller
+          </span>
+          <span className="h-[11px] shrink-0 basis-auto font-['Lufga'] text-[8.323858261108398px] font-normal leading-[10.864px] text-[#747474] relative text-left whitespace-nowrap z-[49]">
+            Premium Used
+          </span>
+        </div>
+        <div className="w-[16.648px] h-[16.648px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/e12f2e46-3300-4177-be52-ebbb632bdbab.png)] bg-cover bg-no-repeat absolute top-[12.484px] right-[7.638px] z-50" />
+      </div>
+      <div className="flex w-[181.044px] h-[30.521px] pt-[3.468px] pr-[83.239px] pb-[3.468px] pl-[6.937px] gap-[6.937px] items-end flex-nowrap bg-[#e2ebff] rounded-[6.937px] absolute top-[113.063px] left-[27.75px] z-20">
+        <div className="w-[23.584px] h-[23.584px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/af49430a-105a-4e88-9bef-d10803fc5d47.png)] bg-cover bg-no-repeat relative z-[21]" />
+        <span className="h-[18px] shrink-0 basis-auto font-['Lufga'] text-[13.87309741973877px] font-medium leading-[18px] text-[#3771fe] relative text-left whitespace-nowrap z-[22]">
+          Home
+        </span>
+      </div>
+      <div className="flex w-[181.044px] h-[27.746px] pt-[3.468px] pr-[10.405px] pb-[3.468px] pl-[6.937px] gap-[6.937px] items-end flex-nowrap bg-[#fff] rounded-[6.937px] absolute top-[149px] left-[28px] z-[23]">
+        <div className="w-[22.197px] h-[20.81px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/e3148b44-c032-44fb-9226-b22f7b8f0d0f.png)] bg-cover bg-no-repeat relative overflow-hidden z-[24]" />
+        <span className="h-[18px] shrink-0 basis-auto font-['Lufga'] text-[13.87309741973877px] font-medium leading-[18px] text-[#747474] relative text-left whitespace-nowrap z-[25]">
+          Drug Information
+        </span>
+      </div>
+      <div className="w-[171.333px] h-[0.69px] bg-[url(https://static.codia.ai/image/2025-02-28/e66b48cc-092e-4d87-a2b7-666e046bbb3e.png)] bg-cover bg-no-repeat absolute top-[190.653px] left-[27.403px] z-[51]" />
+      <div className="flex w-[115.747px] h-[23.405px] pt-[3.468px] pr-[10.405px] pb-[3.468px] pl-[6.937px] gap-[6.937px] items-end flex-nowrap bg-[#fff] rounded-[6.937px] absolute top-[206.727px] left-[27px] z-[29]">
+        <div className="w-[16.469px] h-[16.469px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/bbc8c878-a388-4d07-8a2a-1e99541f8b7e.png)] bg-cover bg-no-repeat relative overflow-hidden z-30" />
+        <span className="h-[16px] shrink-0 basis-auto font-['Lufga'] text-[12px] font-normal leading-[15.662px] text-[#bcbcbc] relative text-left whitespace-nowrap z-[31]">
+          External Link{" "}
+        </span>
+      </div>
+      <span className="flex w-[716px] h-[58px] justify-center items-start font-['Lufga'] text-[44.39391326904297px] font-medium leading-[57.942px] text-[#1d212c] absolute top-[230.984px] left-[339.898px] text-center whitespace-nowrap z-[55]">
+        Your Clinical Decision Companion
+      </span>
+      <div className="flex w-[181.7px] h-[26.359px] pt-[3.468px] pr-[10.405px] pb-[3.468px] pl-[6.937px] gap-[6.937px] items-end flex-nowrap bg-[#fff] rounded-[6.937px] absolute top-[235.086px] left-[27px] z-[26]">
+        <div className="w-[19.422px] h-[19.422px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/2aab917b-7f4f-40d3-923e-7f35d0a90956.png)] bg-cover bg-no-repeat relative overflow-hidden z-[27]" />
+        <span className="h-[18px] shrink-0 basis-auto font-['Lufga'] text-[13.87309741973877px] font-medium leading-[18px] text-[#747474] relative text-left whitespace-nowrap z-[28]">
+          Drug-Drug Interation
+        </span>
+      </div>
+      <div className="flex w-[181.044px] h-[27.053px] pt-[3.468px] pr-[10.405px] pb-[3.468px] pl-[6.937px] gap-[6.937px] items-end flex-nowrap bg-[#fff] rounded-[6.937px] absolute top-[263.445px] left-[27px] z-[32]">
+        <div className="w-[20.116px] h-[20.116px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/8f3481f9-f434-49d6-8de1-b54e4edf2182.png)] bg-cover bg-no-repeat relative overflow-hidden z-[33]" />
+        <span className="h-[18px] shrink-0 basis-auto font-['Lufga'] text-[13.87309741973877px] font-medium leading-[18px] text-[#747474] relative text-left whitespace-nowrap z-[34]">
+          Calculators
+        </span>
+      </div>
+      <div className="flex w-[181.044px] h-[27.053px] pt-[3.468px] pr-[10.405px] pb-[3.468px] pl-[6.937px] gap-[6.937px] items-end flex-nowrap bg-[#fff] rounded-[6.937px] absolute top-[292.5px] left-[27px] z-[35]">
+        <div className="w-[20.116px] h-[20.116px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/bb2903bc-eed4-4f3f-9478-2e66298adc84.png)] bg-cover bg-no-repeat relative overflow-hidden z-[36]" />
+        <span className="h-[18px] shrink-0 basis-auto font-['Lufga'] text-[13.87309741973877px] font-medium leading-[18px] text-[#747474] relative text-left whitespace-nowrap z-[37]">
+          Clinical Trials
+        </span>
+      </div>
+      <span className="flex h-[18px] justify-start items-start font-['Lufga'] text-[13.87309741973877px] font-normal leading-[18px] text-[#606d8c] absolute top-[292.719px] left-[449.875px] text-left whitespace-nowrap z-[38]">
+        Instant Access to evidence based, trusted sources derived medical
+        information
+      </span>
+      <div className="flex w-[724.869px] h-[47.169px] pt-[13.179px] pr-[18.729px] pb-[13.179px] pl-[18.729px] gap-[5.549px] items-center flex-nowrap bg-[#fff] rounded-[6.937px] absolute top-[339.898px] left-[339.898px] shadow-[0_0_11.376px_0_rgba(0,0,0,0.05)] z-[56]">
+        <div className="flex w-[172.359px] gap-[5.549px] items-center shrink-0 flex-nowrap relative z-[57]">
+          <div className="w-[20.81px] h-[20.81px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/88ca1573-1b7f-4f8d-a44f-28118f0b7bef.png)] bg-cover bg-no-repeat relative overflow-hidden z-[58]" />
+          <span className="h-[21px] shrink-0 basis-auto font-['Outfit'] text-[16.647716522216797px] font-normal leading-[20.976px] text-[#9499a8] relative text-left whitespace-nowrap z-[59]">
+            Search your queries
+          </span>
+        </div>
+        <div className="flex w-[105.436px] h-[35.376px] pt-[6.937px] pr-[31.908px] pb-[6.937px] pl-[31.908px] gap-[5.549px] justify-end items-center shrink-0 flex-nowrap bg-[#3771fe] rounded-[3.468px] absolute top-[5.547px] right-[5.551px] z-[60]">
+          <span className="h-[21px] shrink-0 basis-auto font-['Outfit'] text-[16.647716522216797px] font-normal leading-[20.976px] text-[#fff] relative text-left whitespace-nowrap z-[61]">
+            Enter
+          </span>
         </div>
       </div>
+      <div className="w-[171.333px] h-[0.69px] bg-[url(https://static.codia.ai/image/2025-02-28/995caed0-73cb-4eff-8920-16d4ccd2d5e7.png)] bg-cover bg-no-repeat absolute top-[343.38px] left-[26.653px] z-[52]" />
+      <div className="flex w-[181.044px] h-[27.053px] pt-[3.468px] pr-[10.405px] pb-[3.468px] pl-[6.937px] gap-[6.937px] items-end flex-nowrap bg-[#fff] rounded-[6.937px] absolute top-[354.828px] left-[27px] z-[39]">
+        <div className="w-[20.116px] h-[20.116px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/1c11da2f-ca91-4586-a485-e0e3c86d03be.png)] bg-cover bg-no-repeat relative overflow-hidden z-40" />
+        <span className="h-[18px] shrink-0 basis-auto font-['Lufga'] text-[13.87309741973877px] font-medium leading-[18px] text-[#747474] relative text-left whitespace-nowrap z-[41]">
+          Your Project
+        </span>
+      </div>
+      <div className="flex w-[181.044px] h-[27.053px] pt-[3.468px] pr-[10.405px] pb-[3.468px] pl-[6.937px] gap-[6.937px] items-end flex-nowrap bg-[#fff] rounded-[6.937px] absolute top-[385.352px] left-[27px] z-[42]">
+        <div className="w-[20.116px] h-[20.116px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/9a7077cc-e74c-4272-b6e5-10c37c158086.png)] bg-cover bg-no-repeat relative overflow-hidden z-[43]" />
+        <span className="h-[18px] shrink-0 basis-auto font-['Lufga'] text-[13.87309741973877px] font-medium leading-[18px] text-[#747474] relative text-left whitespace-nowrap z-[44]">
+          History
+        </span>
+      </div>
+      <div className="flex w-[561.79px] h-[35.376px] gap-[12px] items-center flex-nowrap absolute top-[400.242px] left-[339.898px] z-[62]">
+        <div className="flex w-[140.118px] h-[35.376px] pt-[6.937px] pr-[31.908px] pb-[6.937px] pl-[31.908px] gap-[5.549px] justify-center items-center shrink-0 flex-nowrap bg-[rgba(255,255,255,0.53)] rounded-[3.468px] relative shadow-[0_0_12.763px_0_rgba(0,0,0,0.04)] z-[63]">
+          <span className="h-[17px] shrink-0 basis-auto font-['Outfit'] text-[13.87309741973877px] font-normal leading-[17px] text-[#596c98] relative text-left whitespace-nowrap z-[64]">
+            Dr.info Summary
+          </span>
+        </div>
+        <div className="flex w-[105.436px] h-[35.376px] pt-[6.937px] pr-[31.908px] pb-[6.937px] pl-[31.908px] gap-[5.549px] justify-center items-center shrink-0 flex-nowrap bg-[rgba(255,255,255,0.53)] rounded-[3.468px] relative shadow-[0_0_12.763px_0_rgba(0,0,0,0.04)] z-[65]">
+          <span className="h-[17px] shrink-0 basis-auto font-['Outfit'] text-[13.87309741973877px] font-normal leading-[17px] text-[#596c98] relative text-left whitespace-nowrap z-[66]">
+            Guidelines
+          </span>
+        </div>
+        <div className="flex w-[140.118px] h-[35.376px] pt-[6.937px] pr-[31.908px] pb-[6.937px] pl-[31.908px] gap-[5.549px] justify-center items-center shrink-0 flex-nowrap bg-[rgba(255,255,255,0.53)] rounded-[3.468px] relative shadow-[0_0_12.763px_0_rgba(0,0,0,0.04)] z-[67]">
+          <span className="h-[17px] shrink-0 basis-auto font-['Outfit'] text-[13.87309741973877px] font-normal leading-[17px] text-[#596c98] relative text-left whitespace-nowrap z-[68]">
+            Clinical Pathways
+          </span>
+        </div>
+        <div className="flex w-[140.118px] h-[35.376px] pt-[6.937px] pr-[31.908px] pb-[6.937px] pl-[31.908px] gap-[5.549px] justify-center items-center shrink-0 flex-nowrap bg-[rgba(255,255,255,0.53)] rounded-[3.468px] relative shadow-[0_0_12.763px_0_rgba(0,0,0,0.04)] z-[69]">
+          <span className="h-[17px] shrink-0 basis-auto font-['Outfit'] text-[13.87309741973877px] font-normal leading-[17px] text-[#596c98] relative text-left whitespace-nowrap z-[70]">
+            PubMed Prefiltered{" "}
+          </span>
+        </div>
+      </div>
+      <div className="flex w-[35.376px] h-[35.376px] pt-[5.785px] pr-[5.785px] pb-[5.785px] pl-[5.785px] gap-[4.207px] justify-center items-center flex-nowrap bg-[rgba(255,255,255,0.53)] rounded-[2.629px] absolute top-[400.242px] left-[1029.383px] shadow-[0_0_12.763px_0_rgba(0,0,0,0.04)] z-[53]">
+        <div className="w-[16.648px] h-[16.648px] shrink-0 bg-[url(https://static.codia.ai/image/2025-02-28/c408b505-f56a-45e7-935d-1269a4518ad4.png)] bg-cover bg-no-repeat relative overflow-hidden z-[54]" />
+      </div>
+      <div className="w-[334px] h-[334px] bg-[url(https://static.codia.ai/image/2025-02-28/2ec993c3-6521-41f3-b196-f86a2ff4c671.png)] bg-cover bg-no-repeat rounded-[50%] absolute top-[516px] left-[341px] z-[12]" />
     </div>
+  </div>
   );
 }
 
