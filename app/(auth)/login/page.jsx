@@ -14,7 +14,7 @@ export default function Login() {
         <div
           style={{
             backgroundImage: `url(${
-              isLogin ? "/images/loginImg.svg" : "/images/signupImg.svg"
+              isLogin ? "/images/loginImg.png" : "/images/signupImg.png"
             })`,
           }}
          className="w-2/5 relative hidden md:block"
