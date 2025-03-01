@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import { ChevronDown, X, User } from "lucide-react";
+import ConfirmModel from "./ConfirmModel";
 
 export default function WaitlistModal({ setIsModalOpen }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [role, setRole] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isConfirm, setIsconfirm] = useState(false);
 
   const roles = [
     "Physician",
@@ -18,7 +20,8 @@ export default function WaitlistModal({ setIsModalOpen }) {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-      <div className="relative w-full max-w-xl p-8 mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+
+     {!isConfirm ? ( <div className="relative w-full max-w-xl p-8 mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#f5f8ff] to-[#f3f7ff] opacity-80 z-0"></div>
 
         <button className="absolute top-6 right-6 z-10" onClick={() => setIsModalOpen(false)}>
@@ -82,6 +85,7 @@ export default function WaitlistModal({ setIsModalOpen }) {
             </div>
 
             <button
+              onClick={() => setIsconfirm(true)}
               type="submit"
               className="w-full py-3 mt-2 text-white font-medium rounded-lg bg-[#0049ff] hover:bg-[#3771fe] transition-colors"
             >
@@ -101,6 +105,10 @@ export default function WaitlistModal({ setIsModalOpen }) {
           </div>
         </div>
       </div>
+      ) :
+      (<ConfirmModel setIsconfirm={setIsconfirm}/>) 
+      } 
+     
     </div>
   );
 }
